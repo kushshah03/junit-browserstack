@@ -28,5 +28,13 @@ jobs:
       with:
         # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0
         maven-version: 3.8.2
-    - name: Run Tests
-      run: mvn test -P single
+    - run: mvn install
+    - name:  Run Tests
+      uses: thundra-io/thundra-maven-test-action@v1
+      with:
+        apikey: 98b7e7a7-5dfc-48d0-871f-c67333b42a9b
+        project_id: f5861c97-8575-4435-adad-5d0955e4d52c
+        command: mvn test -P single
+      env:
+          BROWSERSTACK_USERNAME: test18694
+          BROWSERSTACK_ACCESS_KEY: zj5FRr2LzdqBi7NXzGQF
