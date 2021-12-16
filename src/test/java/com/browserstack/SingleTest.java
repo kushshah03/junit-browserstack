@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class SingleTest extends BrowserStackJUnitTest {
 
   @Test
-  public void test() throws Exception {
+  public void googleTest() throws Exception {
     driver.get("https://www.google.com/ncr");
     WebElement element = driver.findElement(By.name("q"));
     element.sendKeys("BrowserStack");
@@ -17,5 +17,14 @@ public class SingleTest extends BrowserStackJUnitTest {
     Thread.sleep(5000);
 
     assertTrue(driver.getTitle().matches("(?i)BrowserStack - Google Search"));
+  }
+
+  @Test
+  public void browserstackTest() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
   }
 }
