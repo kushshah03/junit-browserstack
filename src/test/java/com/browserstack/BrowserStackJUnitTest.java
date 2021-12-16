@@ -92,6 +92,7 @@ public class BrowserStackJUnitTest {
         }
 
         driver = new RemoteWebDriver(new URL("https://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
+        driver.manage().window().maximize();
     }
 
     @After

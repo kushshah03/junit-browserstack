@@ -27,4 +27,85 @@ public class SingleTest extends BrowserStackJUnitTest {
     Thread.sleep(5000);
     assertTrue(element.isDisplayed());
   }
+
+  @Test
+  public void randomTest1() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest2() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest3() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest4() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest5() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest6() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void randomTest7() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void sampleTest1() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
+
+  @Test
+  public void sampleTest2() throws Exception {
+    driver.get("https://www.browserstack.com/");
+    WebElement element = driver.findElement(By.cssSelector(".sign-in-link a"));
+    element.click();
+    Thread.sleep(5000);
+    assertTrue(element.isDisplayed());
+  }
 }
